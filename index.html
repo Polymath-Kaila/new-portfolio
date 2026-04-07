@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evans Kaila  Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">
+        <span class="logo-bracket">&lt;</span>EK<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact" class="nav-cta">hire me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">about</a>
+    <a href="#skills" class="mob-link">skills</a>
+    <a href="#experience" class="mob-link">experience</a>
+    <a href="#projects" class="mob-link">projects</a>
+    <a href="#contact" class="mob-link cta-mob">hire me</a>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+
+    <div class="hero-content">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">kaila@portfolio:~</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+          <div class="terminal-line output">Evans Kaila  Software Developer</div>
+          <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat role.txt</span></div>
+          <div class="terminal-line output"><span id="typed-role"></span><span class="cursor">|</span></div>
+          <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">ls ./experience</span></div>
+          <div class="terminal-line output files">
+            <span class="file">komfot/</span>
+            <span class="file">casini/</span>
+            <span class="file">freelance/</span>
+            <span class="file">3yrs_strong</span>
+          </div>
+          <div class="terminal-line active-line">
+            <span class="prompt">$</span> <span class="blink-cursor">█</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-greeting">// Hello, World</p>
+        <h1 class="hero-name">
+          <span class="glitch" data-text="Evans">Evans</span>
+          <span class="glitch accent" data-text="Kaila">Kaila</span>
+        </h1>
+        <p class="hero-tagline">I build things that actually <span class="highlight">ship.</span></p>
+        <p class="hero-sub">Backend-first developer. 3 years. 2 startups. Countless lines of code that matter.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <span class="btn-icon">▶</span> view work
+          </a>
+          <a href="#contact" class="btn-ghost">let's talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">years exp</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-label">startups</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">projects shipped</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint">
+      <span>scroll</span>
+      <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">// about me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">I turn ideas into <span class="accent">working software.</span></h2>
+          <p>Three years in, I've gone from writing my first API to co-founding a startup and leading engineering at another. My sweet spot is backend, architecting systems that are clean, fast, and built to last, but I go wherever the product needs me.</p>
+          <p>I built a full POS mobile app from the ground up (backend to APK), shipped production websites for real clients, and learned what "lead developer" actually means under pressure. I don't just write code, I own what I build.</p>
+          <p>Currently looking for the next great problem to solve, freelance, contract, or a full-time role at a startup that moves fast and builds something worth caring about.</p>
+          <div class="about-badges">
+            <span class="badge">🏗 Architecture</span>
+            <span class="badge">⚡ APIs</span>
+            <span class="badge">📱 Mobile Apps</span>
+            <span class="badge">🌐 Web Apps</span>
+            <span class="badge">🚀 Startup Pace</span>
+          </div>
+        </div>
+        <div class="about-code reveal">
+          <div class="code-card">
+            <div class="code-header">
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+              <span class="code-filename">evans.json</span>
+            </div>
+            <pre class="code-body"><code>{
+  <span class="key">"name"</span>: <span class="str">"Evans Kaila"</span>,
+  <span class="key">"role"</span>: <span class="str">"Software Developer"</span>,
+  <span class="key">"experience"</span>: <span class="num">3</span>,
+  <span class="key">"focus"</span>: <span class="str">"Backend"</span>,
+  <span class="key">"currentlyAt"</span>: <span class="str">"Casini (Lead Dev)"</span>,
+  <span class="key">"alsoBuilt"</span>: <span class="str">"Komfot (Co-Founder)"</span>,
+  <span class="key">"openTo"</span>: [
+    <span class="str">"freelance"</span>,
+    <span class="str">"startup roles"</span>,
+    <span class="str">"remote work"</span>
+  ],
+  <span class="key">"availability"</span>: <span class="bool">true</span>,
+  <span class="key">"coffeeLevel"</span>: <span class="str">"always high"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-label">/* skills */</div>
+      <h2 class="section-title reveal">The stack I <span class="accent">actually use.</span></h2>
+      <p class="section-sub reveal">Not a list I copied from a job description — tools I've shipped real products with.</p>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon">⚙️</span>
+            <span class="skill-group-name">Backend</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Python</span>
+            <span class="skill-tag hot">FastAPI</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag hot">PostgreSQL</span>
+            <span class="skill-tag">Golang</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon">📱</span>
+            <span class="skill-group-name">Mobile & Frontend</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Flutter</span>
+            <span class="skill-tag">Dartt</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon">🔧</span>
+            <span class="skill-group-name">Tools & DevOps</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag hot">Linux</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Vercel</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon">🧠</span>
+            <span class="skill-group-name">Strengths</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">System Design</span>
+            <span class="skill-tag">Auth & Security</span>
+            <span class="skill-tag">DB Modeling</span>
+            <span class="skill-tag">API Design</span>
+            <span class="skill-tag">Code Review</span>
+            <span class="skill-tag">Mentoring</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-label">// experience</div>
+      <h2 class="section-title reveal">Where I've <span class="accent">done the work.</span></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card current">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Lead Developer</h3>
+                <div class="company-name">Casini</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="job-date">2025 — Present</span>
+                <span class="job-badge current-badge">Current</span>
+              </div>
+            </div>
+            <p class="job-desc">Leading engineering at Casini, owning architecture decisions, driving development velocity, and shipping features that matter. I set the technical direction and ensure the team builds the right things, the right way.</p>
+            <div class="job-tags">
+              <span>System Architecture</span>
+              <span>Team Leadership</span>
+              <span>Backend Development</span>
+              <span>Product Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Co-Founder & Developer</h3>
+                <div class="company-name">Komfot</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="job-date">2023  2026</span>
+                <span class="job-badge">Startup</span>
+              </div>
+            </div>
+            <p class="job-desc">Built Komfot from the ground up as co-founder. Wore every technical hat — product ideation, backend systems, deployment, and iteration. Got my real-world crash course in what it takes to ship something people actually use.</p>
+            <div class="job-tags">
+              <span>Co-Founder</span>
+              <span>Backend Engineer</span>
+              <span>Product Building</span>
+              <span>0 → 1</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Freelance Developer</h3>
+                <div class="company-name">Independent</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="job-date">2023  Ongoing</span>
+                <span class="job-badge">Freelance</span>
+              </div>
+            </div>
+            <p class="job-desc">Built production websites and web applications for clients across various industries. Learned how to communicate with non-technical stakeholders, scope projects accurately, and deliver on time without cutting corners.</p>
+            <div class="job-tags">
+              <span>Client Work</span>
+              <span>Web Development</span>
+              <span>Full Ownership</span>
+              <span>Delivery</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-label">/* projects */</div>
+      <h2 class="section-title reveal">Things I've <span class="accent">actually shipped.</span></h2>
+      <p class="section-sub reveal">Real projects. Real users. Real code in production.</p>
+
+      <div class="projects-grid">
+
+        <!-- FEATURED PROJECT -->
+        <div class="project-card featured reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">🏪</div>
+              <div class="project-links">
+                <a href="#" class="https://github.com/Polymath-Kaila/Selfa-POS/releases/tag/v1.0.12" title="Download APK">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 14l-4-4h2.5V8h3v4H16l-4 4z"/></svg>
+                  APK
+                </a>
+                <a href="#" class="proj-link" title="View code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="featured-badge">Featured Project</div>
+            <h3 class="project-title">Mobile POS System</h3>
+            <p class="project-desc">Full-featured Point of Sale mobile app built end-to-end. Handles inventory management, sales transactions, receipts, reporting, and offline-first sync. Backend architected for multi-tenant use with real-time data.</p>
+            <div class="project-tech">
+              <span>Flutter</span>
+              <span>FastAPI</span>
+              <span>PostgreSQL</span>
+              <span>REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">🌐</div>
+              <div class="project-links">
+                <a href="#" class="https://www.casini.it.com/" title="Live site">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="#" class="proj-link" title="View code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Client Website — CASINI</h3>
+            <p class="project-desc">Production website built for a casini. k.</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">⚙️</div>
+              <div class="project-links">
+                <a href="#" class="https://www.komfot.co.ke/" title="Live site">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="#" class="proj-link" title="View code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Client Website — KOMFOT</h3>
+            <p class="project-desc">.</p>
+            <div class="project-tech">
+              <span>TypeScript</span>
+              <span>Node.js</span>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 4 -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">// contact</div>
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <h2 class="section-title">Let's build something <span class="accent">together.</span></h2>
+          <p>Whether you have a project that needs a backend architect, want to bring on a lead dev for your startup, or just want to talk shop my inbox is open.</p>
+          <p>I take on selective freelance work and I'm always interested in the right full-time opportunity at a startup doing something interesting.</p>
+          <div class="contact-links">
+            <a href="mailto:evans@example.com" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              kailaevans254@gmail.com
+            </a>
+            <a href="https://github.com/Polymath-Kaila" target="_blank" rel="noopener" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0  
+            <a href="https://linkedin.com/in/evanskaila" target="_blank" rel="noopener" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-header">
+            <span class="form-dot"></span><span class="form-dot"></span><span class="form-dot"></span>
+            <span class="form-title">new_message.sh</span>
+          </div>
+          <div class="form-body">
+            <div class="form-group">
+              <label for="name"><span class="form-prompt">$</span> name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email"><span class="form-prompt">$</span> email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message"><span class="form-prompt">$</span> message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              <span class="btn-icon">▶</span> send_message()
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>EK<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-copy">Designed & built by Evans Kaila — <span class="accent">2025</span></p>
+        <div class="footer-socials">
+          <a href="https://github.com/Polymath-Kaila" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/evanskaila" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
